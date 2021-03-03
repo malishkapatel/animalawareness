@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body { background-color: rgb(255, 255, 255);
+        font: lighter;
+        font-family: cursive;
+        text-align: center;
+        font-size: x-large;
+        }
+        .article{
+        background-color: mistyrose;   
+        color: rgb(19, 4, 37);
+        width:400px;
+        height:400px;
+        border: 2px solid black;
+        border-radius: 5 px;
+        padding: 20 px;
+        }
+        .column{
+        display: grid;
+        grid-gap:320px;
+        grid-template-columns:100px 100px 100px;
+        text-align:center
+                }
+        nav ul{
+        background-color: mistyrose;
+        color: rgb(32, 0, 36);
+        border-style: solid;
+        border-color: rgb(32, 0, 36);
+        border-width: 2px;
+        padding: 10px;}
+        nav ul li{
+        list-style-type: none;
+        display: inline;
+        margin-right: 50px;
+        margin-left:  50px;}
+        nav ul li a{
+        text-decoration: none;
+        color:rgb(32, 0, 36);
+
+
+        }
+button {padding: 15px; 
+/*background-color: rgb(255, 255, 255); */
+margin-top:100px;
+text-decoration: none; 
+}
+.button:hover {
+background-color: purple;
+color: mistyrose;
+}
+.button > a{
+    text-decoration: none;
+        color:purple ;
+
+}
+
+        
+    </style>
+    
+</head>
+<body>
+<header>
+<nav>
+<ul>
+    <li><a href="/index.html">Home</a></li>
+<li><a href="/aboutme.html">About me</a></li>
+<li><a href="/registration.html">Registration</a></li>
+<li><a href="/startquiz.html">Quiz</a></li>
+<li><a href="/login.html">Login</a></li>
+</ul>
+</nav>
+
+
+</header>
+
+
+<h1>Login Page.</h1>
+<h3>Please fill in the following details.</h3>
+<form>
+<label for="FirstName">
+Username:
+    <input type="text" id="FirstName" name="FirstName" required>
+</label> <br>
+<br> 
+    <label for="Password">
+       Password:
+            <input type="password" id="Password" name="Password" required>
+        </label> <br>
+        <br> 
+        <button type="submit" id="button1" name="button1" class="button"><a href="loginsucess.html"> Login</a></button>
+
+                
+</form>
+</body>
+</html>
