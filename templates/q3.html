@@ -17,9 +17,10 @@ color: purple;
         </style>
 </head>
 <body>
+<h3>Score = {{score}}</h3>
 <h2>Select the correct answer from the radio buttons below.</h2>
 <h2>Choose the odd one out.</h2>
-<form action="/q4.html"> 
+<form action="/q4"  method="POST">
 <label for="option1">
 <input type="radio" id="option1" name="answer" value="1">
 Turtle
@@ -41,8 +42,9 @@ Giraffe
     </label>
 <br>
 <br>
+<input type="hidden" name="ca" value="3" >
 <button type="submit" id="button1"
- name="button1" class="button" ><a href="../templates/q4.html">  NEXT</a>
+ name="button1" class="button" >NEXT
 </button>
 <br>
 <br>

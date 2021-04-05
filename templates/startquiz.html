@@ -56,23 +56,27 @@ color: purple;
 <header>
 <nav>
 <ul>
-    <li><a href="../">Home</a></li>
-    <li><a href="../templates/aboutme.html">About me</a></li>
-    <li><a href="../templates/registration.html">Registration</a></li>
-    <li><a href="../templates/startquiz.html">Quiz</a></li>
-    <li><a href="../templates/login.html">Login</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/aboutme">About me</a></li>
+    <li><a href="/registration">Registration</a></li>
+    <!-- <li><a href="/startquiz">Quiz</a></li> -->
+    <li><a href="/calc">Calculator</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/logout">Logout</a></li>
 </ul>
 </nav>
 
 
 </header>
 
-<h2>Welcome to my animal quiz.</h2> 
+<h2>Welcome {{username}}  to my animal quiz.</h2> 
+<form action="/q1" method="GET">
 <h3>In this quiz you will be asked questions about animal life. <br> Each question from 2/3 options to choose from. <br>Hope you enjoy the quiz. Good luck! </h3>  
 <br>
 <br> 
 <button type="submit" id="button1"
- name="button1" class="button" ><a href="../templates/q1.html"> Start Quiz</a>
+ name="button1" class="button" ><a href="/q1"> Start Quiz</a>
 </button>
+</form>
 </body>
 </html>

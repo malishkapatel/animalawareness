@@ -68,11 +68,13 @@ color: mistyrose;
 <header>
 <nav>
 <ul>
-    <li><a href="../">Home</a></li>
-    <li><a href="../templates/aboutme.html">About me</a></li>
-    <li><a href="../templates/registration.html">Registration</a></li>
-    <li><a href="../templates/startquiz.html">Quiz</a></li>
-    <li><a href="../templates/login.html">Login</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/aboutme">About me</a></li>
+    <li><a href="/registration">Registration</a></li>
+    <li><a href="/startquiz">Quiz</a></li>
+    <li><a href="/calc">Calculator</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/logout">Logout</a></li>
 </ul>
 </nav>
 
@@ -82,18 +84,18 @@ color: mistyrose;
 
 <h1>Login Page.</h1>
 <h3>Please fill in the following details.</h3>
-<form>
+<form action="/user_validation" method="POST">
 <label for="FirstName">
 Username:
-    <input type="text" id="FirstName" name="FirstName" required>
+    <input type="text" id="FirstName" name="username" required>
 </label> <br>
 <br> 
     <label for="Password">
        Password:
-            <input type="password" id="Password" name="Password" required>
+            <input type="password" id="Password" name="password" required>
         </label> <br>
         <br> 
-        <button type="submit" id="button1" name="button1" class="button"><a href="loginsucess.html"> Login</a></button>
+        <button type="submit" id="button1" name="button1" class="button">Login</button>
 
                 
 </form>

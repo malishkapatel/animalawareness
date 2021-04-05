@@ -19,7 +19,7 @@ color: purple;
 <body>
 <h2>Select the correct answer from the radio buttons below.</h2>
 <h2>Which is the largest land animal in the world?</h2>
-<form action="/q2.html"> 
+<form action="/q2" method="POST"> 
 <label for="option1">
 <input type="radio" id="option1" name="answer" value="1">
 Blue Whale
@@ -41,9 +41,9 @@ Elephants
     </label>
 <br>
 <br>
-
+<input type="hidden" name="ca" value="2" >
 <button type="submit" id="button1"
- name="button1" class="button" ><a href="../templates/q2.html"> Start Quiz</a>
+ name="button1" class="button">NEXT
 </button>
 <br>
 <br>

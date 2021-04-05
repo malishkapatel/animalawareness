@@ -17,9 +17,10 @@ color: purple;
         </style>
 </head>
 <body>
+    <h3>Score = {{score}}</h3>
 <h2>Select the correct answer from the radio buttons below.</h2>
 <h2>Aquatic Animals and Oceanic animals are different speices. </h2>
-<form action="/endquiz.html"> 
+<form action="/endquiz" method="POST"> 
 <label for="option1">
 <input type="radio" id="option1" name="answer" value="1">
 True
@@ -32,10 +33,11 @@ True
     <input type="radio" id="option2" name="answer" value="2">
 False
     </label>
+<br>  
 <br>
-<br>
+<input type="hidden" name="ca" value="2" >
 <button type="submit" id="button1"
- name="button1" class="button" ><a href="../templates/endquiz.html"> End Quiz</a>
+ name="button1" class="button" >End Quiz
 </button>
 
 <br>

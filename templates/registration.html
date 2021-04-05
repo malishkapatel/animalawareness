@@ -57,11 +57,13 @@ color: purple;
 <header>
 <nav>
 <ul>
-    <li><a href="../">Home</a></li>
-    <li><a href="../templates/aboutme.html">About me</a></li>
-    <li><a href="../templates/registration.html">Registration</a></li>
-    <li><a href="../templates/startquiz.html">Quiz</a></li>
-    <li><a href="../templates/login.html">Login</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/aboutme">About me</a></li>
+    <li><a href="/registration">Registration</a></li>
+    <!-- <li><a href="/startquiz">Quiz</a></li> -->
+    <li><a href="/calc">Calculator</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/logout">Logout</a></li>
 </ul>
 </nav>
 
@@ -69,22 +71,22 @@ color: purple;
 </header>
 <h1>Registration Page.</h1>
 <h3>Please fill in the following details.</h3>
-<form>
-<label for="FirstName">
-Firstname:
-    <input type="text" id="FirstName" name="FirstName" required>
+<form action="/register_user" method = "POST">
+<label for="firstName">
+Username:
+    <input type="text" id="firstName" name="username" required>
 </label> <br>
 <br> 
 
-<label for="LastName">
+<!-- <label for="LastName">
     Lastname:
         <input type="text" id="LastName" name="LastName" required>
     </label> <br>
-    <br> 
+    <br>  -->
 
-    <label for="Password">
+    <label for="password">
        Password:
-            <input type="password" id="Password" name="Password" required>
+            <input type="password" id="password" name="password" required>
         </label> <br>
         <br> 
 
@@ -103,9 +105,9 @@ Firstname:
                 <textarea cols="70" role="200"></textarea> 
                 </label>
                 <br>
-                <button type="submit" id="button1"
-                name="button1" class="button" ><a href="../templates/registersucess.html"> Register</a>
-               </button>
+                <button type="submit" id="button1">Register</button>
+                <!-- name="button1" class="button" ><a href=".registersucess"> Register</a> -->
+              
             
                 
 
